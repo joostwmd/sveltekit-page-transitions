@@ -1,3 +1,7 @@
+### ABOUT
+
+just a fork that adds export condition
+
 # sveltekit-page-transitions
 
 [Demo](https://konsta.vercel.app)
@@ -11,6 +15,7 @@ npm -i sveltekit-page-transitions
 ### Usage
 
 `+layout.svelte`
+
 ```diff
 <script>
     import '../app.css'
@@ -19,19 +24,20 @@ npm -i sveltekit-page-transitions
 </script>
 
 <App theme="ios" safeAreas>
-+   <PageTransitionController transition={cover}> 
++   <PageTransitionController transition={cover}>
         <slot />
 +   </PageTransitionController>
 </App>
 ```
 
 `+page.svelte (all top level pages that inherit from the layout)`
+
 ```diff
 <script>
     import { Page } from 'konsta/svelte'
 +   import { PageTransition } from 'sveltekit-page-transitions'
 </script>
- 
+
 +<PageTransition>
     <Page>
         /* Page content goes here */
