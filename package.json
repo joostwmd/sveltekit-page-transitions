@@ -1,8 +1,8 @@
 {
-  "name": "sveltekit-page-transitions",
+  "name": "joostwmd-sveltekit-page-transitions",
   "version": "0.0.8",
   "license": "MIT",
-  "homepage": "https://github.com/myleftshoe/sveltekit-page-transitions",
+  "homepage": "https://github.com/joostwmd/sveltekit-page-transitions",
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
@@ -24,5 +24,5 @@
     "./svelte-transition-modified": "./svelte-transition-modified.js",
     "./transitions": "./transitions.js"
   },
-  "svelte": "./index.js"
+  "svelte": "./dist/index.js"
 }
